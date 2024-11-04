@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --second-font: "Playwrite GB S", cursive, serif;
+    --main-font: "Montserrat", sans-serif; 
+    --main-font-color: #37371f;
+}
+
+body {
+    font-family: var(--main-font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav a:hover {
+    color: black;
+}
+
+nav a.active {
+    color: #0a8a3e;
+}   
+
+nav #login {
+    width: 150px;
+    text-align: right;
+}
+
+#login img {
+    width: 40px;
+    border: 1px solid #37371f;
+    border-radius: 50%;
+}
+
+header {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 100px 30px 30px 30px;
+}
+
+header h1 {
+    font-family: var(--second-font);
+    font-size: 3rem;
+    padding-bottom: 15px;
+    color: var(--main-font-color);
+    line-height: 1.2;
+}
+
+header h1 #green {
+    color:#0a8a3e;
+}
+
+header h1 #brown {
+    color: #7d6400;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: var(--main-font-color);
+    line-height: 1.5;
+}
+
+header img {
+    width: 60%;
+    margin-top: 20px;
+}
+
+.section {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px 0;
+}
+
+.shelf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.sale-grid {
+    justify-content: center;
+    width: 100%;
+    background-color: #c9e165;
+    display: grid;   
+    grid-template-columns: repeat(auto-fit, 350px); 
+    gap: 10px;
+}
+
+.box{
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-content: center;
+}
+
+.box-child {
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.box:first-child {
+    background-color: rgb(247, 230, 232);
+}
+
+.box:first-child h3 {
+    font-family: var(--second-font);
+    font-size: 1.5rem;
+}
+
+.box:first-child img{
+    width: 300px;
+}
+
+.box:first-child button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #37371f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.box-child:first-child{
+    background-color: lightpink;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+
+.box-child:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "box-1 box-1"
+    "box-2 box-3";
+}
+
+.box-child img {
+    width: 100px;
+}
+
+.product {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product:hover {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.product img {
+    width: 10rem;
+}
+
+.product h3, .product p {
+    margin: 5px 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+#shop-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #37371f;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+}
+
+footer img {
+    width: 150px;
+}
+
+#login-form {
+    border: #37371f solid 1px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 10px 15px 10px 10px;
+    width: 400px;
+}
+
+#login-form div { 
+    box-sizing: border-box;
+    text-align: left;
+    padding: 5px 5px;
+    margin: 5px auto;
+}
+
+#login-form label {
+    display: inline-block;
+    width: 25%;
+}
+
+#login-form input {
+    margin: 5px auto;
+    padding: 10px 15px;
+    border: 1px solid #37371f;
+    border-radius: 5px;
+    width: 70%;
+}
+
+#login-form input[type="submit"] {
+    width: 150px;
+    display: block;
+    margin: 15px auto;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #0a8a3e;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
